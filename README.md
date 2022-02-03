@@ -2,7 +2,7 @@ A Node-RED application with [balena-supervisor](https://balena.io/docs/reference
 
 You can deploy this project to a new balenaCloud application in one click using the button below:
 
-[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs/balena-node-red)
+[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/saxenapranav9/Azolla)
 
 Or, you can create an application in your balenaCloud dashboard and balena push this code to it the traditional way.
 
