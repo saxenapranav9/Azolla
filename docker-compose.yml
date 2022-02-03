@@ -1,0 +1,36 @@
+version: '2'
+services:
+        src:
+                build: ./src
+                privileged: true
+                restart: always
+                network_mode: "host"
+                labels:
+                        io.balena.features.kernel-modules: '1'
+        src1:
+                build: ./src1
+                privileged: true
+                restart: always
+                network_mode: "host"
+                labels:
+                        io.balena.features.kernel-modules: '1'
+
+        node-red:
+            build: ./node-red
+            restart: always
+            privileged: true
+            network_mode: host
+            labels:
+              io.balena.features.supervisor-api: '1'
+            environment:
+              - "USERNAME=balena"
+              - "PASSWORD=balena"
+              - "ENCRIPTION_KEY=balena"
+            cap_add:
+              - SYS_RAWIO
+            devices:
+              - "/dev/mem:/dev/mem"
+              - "/dev/gpiomem:/dev/gpiomem"
+              - "/dev/i2c-1:/dev/i2c-1"
+            ports:
+              - 80:80
