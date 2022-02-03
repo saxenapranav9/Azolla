@@ -17,3 +17,5 @@ ENCRIPTION_KEY | `balena` | the encription key used to store your credentials fi
 You **must** set the `USERNAME` and `PASSWORD` environment variables to be able to save or run programs in Node-RED.  
 More information about using and setting environment variables can be found in
 the [balena docs](https://balena.io/docs/learn/manage/serv-vars/).
+
+Welcome to Azolla
